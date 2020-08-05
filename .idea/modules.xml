@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-TSN_DEMO_05_Map.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-TSN_DEMO_05_Map.iml" group="TSN_DEMO_05_Map" />
+      <module fileurl="file://$PROJECT_DIR$/TSN_DEMO_05_Map/TSN_DEMO_05_Map-TSN_DEMO_05_Map.iml" filepath="$PROJECT_DIR$/TSN_DEMO_05_Map/TSN_DEMO_05_Map-TSN_DEMO_05_Map.iml" group="TSN_DEMO_05_Map/TSN_DEMO_05_Map" />
+    </modules>
+  </component>
+</project>
