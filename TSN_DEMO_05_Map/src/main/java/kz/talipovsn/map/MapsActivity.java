@@ -61,7 +61,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Добавление маркера на карту с текстом, иконкой и полупрозрачностью
         mMap.addMarker(new MarkerOptions().position(marker1).title(getString(R.string.marker1_title)).icon(
-                BitmapDescriptorFactory.fromResource(R.drawable.psu)).alpha(ALPHA).snippet(getString(R.string.marker1_txt_click)));
+                BitmapDescriptorFactory.fromResource(R.drawable.psu)).alpha(ALPHA).
+                snippet(getString(R.string.marker1_txt_click)));
 
         // Добавление маркера на карту с текстом, иконкой и полупрозрачностью
         mMap.addMarker(new MarkerOptions().position(marker2).title((getString(R.string.marker2_title))).icon(
