@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="kz.talipovsn.map">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Разрешения:
       * GPS ("android.permission.ACCESS_FINE_LOCATION")
@@ -36,6 +35,7 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -46,6 +46,7 @@
         <!-- Окно "Подробно" -->
         <activity
             android:name=".DetailActivity"
+            android:theme="@style/AppTheme"
             android:label="@string/title_activity_detail">
         </activity>
 

@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/detailButtonExit"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_alignParentBottom="true"
-        android:background="#f9f9f0"
-        android:onClick="detailButtonClickExit"
-        android:text="@string/back"
-        android:textStyle="bold"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/detailButtonExit"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="#f4f4c6"
         android:gravity="center_vertical|center_horizontal">
 
@@ -24,11 +17,19 @@
             android:id="@+id/webView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
             android:autoLink="all"
             android:text="@string/startMarker_info"
-            android:textAppearance="?android:attr/textAppearanceSmall"/>
-
+            android:textAppearance="?android:attr/textAppearanceSmall" />
     </ScrollView>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/detailButtonExit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f9f9f0"
+        android:onClick="detailButtonClickExit"
+        android:text="@string/back"
+        android:textStyle="bold"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>

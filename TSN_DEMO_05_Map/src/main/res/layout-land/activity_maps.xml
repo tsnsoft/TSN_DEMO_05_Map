@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="#ecebb2"
-              android:gravity="center_horizontal"
-              android:orientation="vertical"
-              >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecebb2"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        tools:context="kz.talipovsn.map.MapsActivity" />
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -26,7 +33,7 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/psu"
                 android:tag="@string/marker1_id"
-                android:text="@string/marker1_title"/>
+                android:text="@string/marker1_title" />
 
             <ImageButton
                 android:layout_width="66dp"
@@ -36,19 +43,11 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/ineu"
                 android:tag="@string/marker2_id"
-                android:text="@string/marker2_title"/>
+                android:text="@string/marker2_title" />
 
         </LinearLayout>
 
     </ScrollView>
-
-    <fragment
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="116dp"
-        tools:context="kz.talipovsn.map.MapsActivity"/>
 
     <Button
         android:id="@+id/detailButton"
@@ -57,7 +56,7 @@
         android:background="#f9f9f0"
         android:onClick="detailButtonClick"
         android:text="@string/detail"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <ScrollView
         android:id="@+id/sv1"
@@ -75,7 +74,7 @@
             android:clickable="true"
             android:gravity="center_vertical|center_horizontal"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textIsSelectable="false"/>
+            android:textIsSelectable="false" />
 
     </ScrollView>
 

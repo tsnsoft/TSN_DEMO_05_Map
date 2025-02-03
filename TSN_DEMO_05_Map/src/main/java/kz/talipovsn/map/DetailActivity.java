@@ -5,11 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 
+import androidx.core.view.WindowCompat;
+
 public class DetailActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
         setContentView(R.layout.activity_detail);
 
         // Доступ к компоненту отображения HTML-страниц
